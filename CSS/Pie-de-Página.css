@@ -6,12 +6,8 @@
 html, body{
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Asegura que el contenido llene toda la pantalla */
-  display: flex;
-  flex-direction: column;
 }
 footer{
-  margin-top: auto; /* Empuja el footer hacia la parte inferior */
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -20,6 +16,7 @@ footer{
   gap: 20px;
   bottom: 0;
   left: 0;
+  position: fixed; /*Fija el footer en la parte inferior*/
 }
 /*Estilos para los íconos*/
 footer a {
