@@ -1,45 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Ajusta el body y el footer*/
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 footer{
-	background: #48e;
-	width: 1400px;
-	font-size: 50px;
+  width: 100vw; /*El footer ocupe el 100% del ancho de la pantalla*/
+  background: #48e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  bottom: 0;
+  left: 0;
 }
-footer a.Facebook{
-	color: rgb(0, 0, 100);
-	padding-left: 50px;
-	margin-left: 400px;
+/*Estilos para los íconos*/
+footer a {
+  text-decoration: none; /*Sin subrayado*/
+  font-size: 30px; /*Tamaño inicial de los íconos*/
+  color: inherit; /*Usará el color definido para cada clase*/
+  padding: 10px; /*Espaciado interno*/
+  border-radius: 8px; /*Bordes redondeados*/
+  transition: transform 0.3s, color 0.3s; /*Animación suave al pasar el mouse*/
 }
-.YouTube{
-	color: rgb(255, 0, 0);
-	padding-left: 50px;
+/*Colores específicos por plataforma*/
+footer a.Facebook {
+  color: rgb(0, 0, 100);
 }
-.WhatsApp{
-	color: rgb(0, 255, 0);
-	padding-left: 50px;
+footer a.YouTube {
+  color: rgb(255, 0, 0);
 }
-.Linkedin{
-	color: rgb(0, 0, 100);
-	padding-left: 50px;
+footer a.WhatsApp {
+  color: rgb(0, 255, 0);
 }
-/*Resonposive design*/
-@media only screen and (max-width: 1024px){
-	footer{
-		width: 1227px;
-	}
+footer a.Linkedin {
+  color: rgb(0, 0, 100);
 }
-@media only screen and (max-width: 540px){
-	footer{
-		width: 1075px;
-	}
+/*Efectos al pasar el mouse*/
+footer a:hover {
+  transform: scale(1.2); /*Agranda el ícono ligeramente*/
+  color: #fff; /*Cambia el color del texto al pasar el mouse*/
 }
-	.Facebook{
-		margin-left: 250px;
-	}
-@media only screen and (max-width: 430px){
-	footer{
-		width: 570px;
-		font-size: 20px;
-	}
-	.Facebook{
-		margin-left: 50px;
-	}
+/*Responsive design*/
+@media (max-width: 768px) {
+  footer a {
+    font-size: 25px; /*Reduce el tamaño de los íconos en pantallas medianas*/
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    flex-direction: row; /*Los íconos se apilan verticalmente en pantallas pequeñas*/
+    gap: 15px; /*Reduce el espacio entre los íconos*/
+  }
+  footer a {
+    font-size: 20px; /*Tamaño más pequeño para los íconos*/
+  }
 }
