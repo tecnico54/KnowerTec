@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+  overflow-x: hidden;
+}
 h1{
 	text-align: center;
 	color: rgb(150, 0, 0);
