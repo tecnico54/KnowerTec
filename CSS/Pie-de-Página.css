@@ -6,6 +6,7 @@
 html, body{
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 footer{
   width: 100vw; /*El footer ocupe el 100% del ancho de la pantalla*/
