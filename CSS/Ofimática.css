@@ -1,0 +1,249 @@
+table{
+	margin: 20px 100px;
+}
+td{
+	border: 5px inset #000;
+	font-size: 50px;
+}
+img{
+	width: 350px;
+}
+@media only screen and (max-width: 856px){
+	table{
+		margin: 10px 5px;
+	}
+	td{
+		font-size: 15px;
+	}
+	img{
+		width: 200px;
+	}
+}
+@media only screen and (max-width: 412px){
+   table{
+		margin: 10px 0;
+	}
+	td{
+		font-size: 15px;
+	}
+	img{
+		width: 100px;
+	}
+}
+/*Viewport por defecto*/
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Menú horizontal-resposive design: con la resolución grande*/
+.Navegador {
+  background: #fff;
+  max-width: 4500px;
+  display: flex; 
+  border: 5px inset #ddd;
+}
+.Menú-horizontal {
+	display: flex;
+  width: 900px;
+}
+.Imagen {
+	display: flex;
+  max-width: 150px;
+}
+.Lista__Menú-horizontal--Cursos{
+	display: flex;
+  padding: 20px 50px;
+}
+.Lista__Menú-horizontal--Cursos > a{
+	color: #48e;
+  text-decoration: none;
+ 	font-size: 15px;
+}
+.Lista__Menú-horizontal--Cursos:hover > a{
+	color: rgb(0, 0, 100);
+}
+.Lista__Menú-horizontal--Tutoriales{
+	display: flex;
+  padding: 20px 50px;
+}
+.Lista__Menú-horizontal--Tutoriales > a{
+	color: #48e;
+  text-decoration: none;
+ 	font-size: 15px;
+}
+.Lista__Menú-horizontal--Tutoriales:hover > a{
+	color: rgb(0, 0, 100);
+}
+.Lista__Menú-horizontal {
+	display: flex;
+  padding: 20px 50px;
+}
+.Lista__Menú-horizontal > a {
+	color: #48e;
+  text-decoration: none;
+ 	font-size: 15px;
+}
+.Lista__Menú-horizontal:hover > a{
+	color: rgb(0, 0, 100);
+}
+/*Menú vertical-resposive design: con la resolución grande*/
+.Contenedor--Cursos{
+  border: 5px inset #46e;
+  background: #fff;
+  max-width: 295px;
+  height: 200px;
+  margin-left: 5px;
+  padding: 10px;
+  position: absolute;
+  top: -300px; /* Posición inicial fuera de la vista */
+  opacity: 0; /* Ocultar visualmente el contenedor */
+  transition: 1.5s; /* Transición suave */
+}
+.Lista__Menú-horizontal--Cursos:hover > .Contenedor--Cursos{
+  top: 50px; /* Cambia la posición para que sea visible */
+  opacity: 1; /* Haz que sea visible */
+}
+.Contenedor--Tutoriales{
+  border: 5px inset #46e;
+  background: #fff;
+  max-width: 295px;
+  height: 200px;
+  margin-left: 5px;
+  padding: 10px;
+  position: absolute;
+  top: -300px; /*Posición inicial fuera de la vista*/
+  opacity: 0; /*Ocultar visualmente el contenedor*/
+  transition: 1.5s; /*Transición suave*/
+}
+.Lista__Menú-horizontal--Tutoriales:hover > .Contenedor--Tutoriales{
+	top: 50px; /*Cambia la posición para que sea visible*/
+  opacity: 1; /*Haz que sea visible*/
+}
+.Menú-vertical--Pc{
+	display: flex;
+	padding: 0px 75px 0px 25px;
+}
+.Lista__Menú-vertical--Pc > a{
+	text-decoration: none;
+	color: rgb(0, 0, 100);
+	color: #46e;
+	padding: 0px 75px 0px 25px;
+}
+.Menú-vertical--Programación{
+	margin-top: 50px;
+	display: flex;
+	padding: 0px 100px 0px 25px;
+}
+.Lista__Menú-vertical--Promación > a{
+	text-decoration: none;
+	color: rgb(0, 0, 100);
+	color: #46e;
+	padding: 0px 100px 0px 25px;
+}
+.Menú{
+	display: none; /*Desaparece el menú pequeño*/
+}
+/*Resposive design*/
+@media only screen and (max-width: 856px){
+	/*Menú*/
+	.Menú-horizontal{
+		display: none;
+	}
+	/*Ícono del menú*/
+	.Menú{
+		display: block;
+    background: #fff;
+    max-width: 1263px;
+    font-size: 50px;
+    padding: 20px 30px;
+    cursor: pointer;
+    position: relative; 
+    border: 5px inset #bbb; 
+	}
+	.Contenedor__Pequeño{
+		background: #fff;
+		border: 5px outset #48e;
+		width: 175px;
+		margin: 25px 0;
+		padding: 10px 50px 0 50px;
+		top: -300px; /*Posición inicial fuera de la vista*/
+	  opacity: 0; /*Ocultar visualmente el contenedor*/
+	  transition: 1.5s; /*Transición suave*/
+		position: absolute;
+	}
+	.Menú:hover > .Contenedor__Pequeño{
+		top: 50px; /*Cambia la posición para que sea visible*/
+	  opacity: 1; /*Haz que sea visible*/
+	}
+	.Menú__Pequeño{
+		list-style: none;
+	}
+	/*Sub-Menú*/
+	.Contenido__Pequeño--Cursos{
+		border: 5px inset #46e;
+	  background: #fff;
+	  font-size: 15px;
+	  max-width: 295px;
+	  height: 200px;
+	  margin: -35px 100px;
+	  padding: 10px;
+	  position: absolute;
+	  top: -300px; /*Posición inicial fuera de la vista*/
+	  opacity: 0; /*Ocultar visualmente el contenedor*/
+	  transition: 1.5s; /*Transición suave*/
+	}
+	.Lista__Pequeña--Cursos:hover > .Contenido__Pequeño--Cursos{
+		top: 50px; /*Cambia la posición para que sea visible*/
+	  opacity: 1; /*Haz que sea visible*/
+	}
+	.Lista__Pequeña--Cursos{
+		padding: 5px 10px 50px;
+	}
+	.Lista__Pequeña--Cursos:hover{
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.Lista__Pequeña--Cursos > a{
+		text-decoration: none;
+		color: #46e;
+		font-size: 15px;
+	}
+	.Contenido__Pequeño--Tutoriales{
+		border: 5px inset #46e;
+	  background: #fff;
+	  font-size: 15px;
+	  max-width: 295px;
+	  height: 200px;
+	  margin: -35px 100px;
+	  padding: 10px;
+	  position: absolute;
+	  top: -300px; /*Posición inicial fuera de la vista*/
+	  opacity: 0; /*Ocultar visualmente el contenedor*/
+	  transition: 1.5s; /*Transición suave*/
+	}
+	.Lista__Pequeña--Tutoriales:hover > .Contenido__Pequeño--Tutoriales{
+		top: 50px; /*Cambia la posición para que sea visible*/
+  	opacity: 1; /*Haz que sea visible*/
+	}
+	.Lista__Pequeña--Tutoriales{
+		padding: 5px 10px 50px;
+	}
+	.Lista__Pequeña--Tutoriales:hover{
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.Lista__Pequeña--Tutoriales > a{
+		text-decoration: none;
+		color: #46e;
+		font-size: 15px;
+	}
+	.Lista__Pequeña{
+		padding: 0 10px 50px;
+	}
+	.Lista__Pequeña:hover{
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.Lista__Pequeña > a{
+		text-decoration: none;
+		color: #46e;
+		font-size: 15px;
+	}
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="../Imagenes/Pc-Knower.png">
+	<title>Pc</title>
+</head>
+<body background="Files/46c3d6760d19de9215f4d481c0768b1c.jpg">
+	<nav>
+		<ul class="menu-horizontal">
+            <li><a href="Tools.html">Página Principal</a></li>
+			<li><a target=_black href="https://support.hp.com/co-es">Instalación del Software de Impresoras</a></li>
+			<li><a target=_black href="http://www.danny.net.pe/">Software</a></li>
+			<li><a target=_black href="https://www.coolermaster.com/la/es-la/power-supply-calculator/">Calculadora de Watts</a></</li>
+            <li><a target=_blank href="Red.html">Red</a></li>
+            <li><a target=_blank href="https://rufus.ie/">Herramienta para la imagen iso</a></li> 
+        </ul>           	
+    </nav>
+    <br><br><br>
+<style type="text/css">
+.nav li ul li ul{
+    right: -140px;
+    top: 0;
+}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "open sans";
+    }
+    nav{
+        max-width: 100%;
+        margin: auto;
+        background-color: black;
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .menu-horizontal{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-horizontal > li > a{
+        display: green;
+        padding: 50px 20px;
+        color: #1676E5;
+        text-decoration: none;
+    }
+    .menu-horizontal > li:hover{
+        background-color: red;
+    }
+    .menu-vertical{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+}
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+</style>
+</body>
+</html>

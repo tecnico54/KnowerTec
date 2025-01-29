@@ -1,0 +1,196 @@
+.Tamaño-de-Tarjetas-Madre{
+	display: inline-block;
+	width: 900px;
+	height: 200px;
+	overflow: auto;
+	margin-left: 145px;
+	border: 5px groove #ddd;
+}
+.Tamaño-de-Tarjetas-Madre > img{
+	width: 250px;
+	float: left;
+	padding-left: 10px;
+}
+.Tamaño-de-Tarjetas-Madre > p{
+	font-size: 30px;
+}
+.Shopping-Pc{
+	margin: 50px 145px;
+	width: 900px;
+	height: 200px;
+	overflow: auto;
+	border: 5px groove #ddd;
+}
+.Shopping-Pc > img{
+	width: 250px;
+	float: right;
+	padding-right: 5px;
+}
+.Shopping-Pc > p{
+	font-size: 30px;
+}
+/*Resonposive design*/
+@media only screen and (max-width: 1024px){
+	.Tamaño-de-Tarjetas-Madre{
+		display: block;
+		width: 700px;
+		margin-left: 200px;
+	}
+	.Shopping-Pc{
+		display: block;
+		width: 700px;
+		margin-left: 200px;
+	}
+}
+@media only screen and (max-width: 853px){
+	.Tamaño-de-Tarjetas-Madre{
+		margin: 20px 200px 20px 200px;
+		width: 450px;
+	}
+	.Tamaño-de-Tarjetas-Madre > p{
+		font-size: 15px;
+	}
+	.Tamaño-de-Tarjetas-Madre > img{
+		width: 50px;
+		padding: 0;
+        transition: 0.3s;
+        cursor: pointer;
+	}
+	.Tamaño-de-Tarjetas-Madre.Tarjetas-Madre-pc > img{
+	    transform: scale(5); /*Aumenta el tamaño de la imagen*/
+	    z-index: 1000;
+	    position: relative;
+	    margin: 100px 100px;
+	}
+	.Shopping-Pc{
+		margin: 20px 200px 50px 200px;
+		width: 450px;
+	}
+	.Shopping-Pc > p{
+		font-size: 15px;
+	}
+	.Shopping-Pc > img{
+		padding: 0;
+		width: 50px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .Shopping-Pc.Shopping > img{
+     	transform: scale(5); /*Aumenta el tamaño al doble*/
+        z-index: 1000; /*Asegura que esté sobre otros elementos*/
+        position: relative;
+        margin: 75px 100px;
+    }
+}
+@media only screen and (max-width: 514px){
+	.Shopping-Pc{
+		margin: 20px 200px 500px;
+	}
+}
+@media only screen and (max-width: 430px){
+	.Tamaño-de-Tarjetas-Madre{
+		margin: 20px 20px 20px 20px;
+		width: 360px;
+	}
+	.Tamaño-de-Tarjetas-Madre > img{
+		width: 30px;
+		padding: 0;
+        transition: 0.3s;
+        cursor: pointer;
+	}
+	.Tamaño-de-Tarjetas-Madre.Tarjetas-Madre-pc > img{
+	    transform: scale(7); /* Aumenta el tamaño de la imagen */
+	    z-index: 1000;
+	    position: relative;
+	    margin: 75px 100px;
+	}
+	.Shopping-Pc{
+		margin: 20px 20px 500px 20px;
+		width: 360px;
+	}
+	.Shopping-Pc > img{
+		padding: 0;
+		width: 70px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .Shopping-Pc.Shopping > img{
+     	transform: scale(3); /*Aumenta el tamaño al doble*/
+        z-index: 1000; /*Asegura que esté sobre otros elementos*/
+        position: relative;
+        margin: 75px 100px;
+    }
+}
+@media only screen and (max-width: 412px){
+	.Tamaño-de-Tarjetas-Madre{
+		margin: 20px 20px 70px 20px;
+	}
+	.Tamaño-de-Tarjetas-Madre > img{
+		width: 30px;
+		padding: 0;
+  		transition: 0.3s;
+  		cursor: pointer;
+	}
+	.Tamaño-de-Tarjetas-Madre.Tarjetas-Madre-pc > img{
+	    transform: scale(7); /* Aumenta el tamaño de la imagen */
+	    z-index: 1000;
+	    position: relative;
+	    margin: 75px 100px;
+	}
+	.Shopping-Pc{
+		margin: 20px 20px 500px 20px;
+	}
+	.Shopping-Pc > img{
+		padding: 0;
+		width: 70px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .Shopping-Pc.Shopping > img{
+     	transform: scale(3); /*Aumenta el tamaño al doble*/
+        z-index: 1000; /*Asegura que esté sobre otros elementos*/
+        position: relative;
+        margin: 75px 100px;
+    }
+}
+@media only screen and (max-width: 374px){
+	.Tamaño-de-Tarjetas-Madre{
+		margin: 20px 0 20px 0;
+	}
+	.Tamaño-de-Tarjetas-Madre > img{
+		padding: 0;
+        transition: 0.3s;
+        cursor: pointer;
+	}
+	.Tamaño-de-Tarjetas-Madre.Tarjetas-Madre-pc > img{
+	    transform: scale(7); /* Aumenta el tamaño de la imagen */
+	    z-index: 1000;
+	    position: relative;
+	    margin: 75px 100px;
+	}
+	.Shopping-Pc{
+		margin: 20px 0 500px 0;
+	}
+	.Shopping-Pc > img{
+		padding: 0;
+		width: 70px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .Shopping-Pc.Shopping > img{
+     	transform: scale(3); /*Aumenta el tamaño al doble*/
+        z-index: 1000; /*Asegura que esté sobre otros elementos*/
+        position: relative;
+        margin: 75px 100px;
+    }
+}
+@media only screen and (max-width: 299px){
+	.Shopping-Pc{
+		margin: 20px 0 9000px 0;
+	}
+}
+@media only screen and (max-width: 249px){
+	.Shopping-Pc{
+		margin: 20px 0 9000px 0;
+	}
+}

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "open sans";
+}
+/*Menú Grande*/
+body{
+    background: #000;
+}
+.Navegador{
+    max-width: 4500px;
+    background: #000;
+    font-size: 25px;
+    position: fixed;
+    border: 5px inset #ddd;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.lista > a{
+    padding: 15px 20px;
+    color: #46e;
+    text-decoration: blink;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background: #000;
+}
+.lista:hover .menu-vertical{
+    display: block;
+}
+.menu-horizontal > .lista:hover{
+    text-align: left;
+    background: #000;
+}
+.menu-vertical > .lista:hover{
+    text-align: left;
+    background: rgba(100, 0, 0, 0.5);
+}
+.lista a{
+    display: block;
+    color: #1676E5;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.Contenido__Menú{
+    display: none;
+}
+/*Responsive design*/
+@media only screen and (max-width: 1192px){
+    /*Menú horizontal*/
+    .Navegador {
+        display: none; /*Oculto inicialmente*/
+    }
+    /*Ícono del menú*/
+    .Contenido__Menú{
+        display: block;
+        background: #46e;
+        width: 2000px;
+        font-size: 70px;
+        padding: 20px 30px;
+        cursor: pointer;
+        position: relative;        
+    }
+    .Contenedor__Pequeño{
+        background: #000;
+        border: 5px outset #48e;
+        width: 195px;
+        padding: 10px;
+        top: -300px; /*Posición inicial fuera de la vista*/
+        opacity: 0; /*Ocultar visualmente el contenedor*/
+        transition: 1.5s; /*Transición suave*/
+        position: absolute;
+    }
+    .Contenido__Menú:hover > .Contenedor__Pequeño{
+        top: 50px; /*Cambia la posición para que sea visible*/
+        opacity: 1; /*Haz que sea visible*/
+    }
+    .menu-horizontal--Pequeño{
+        background: #bbb;
+        list-style: none;
+        padding: 5px 0;
+        margin: 0;
+    }
+    .Lista{
+        position: relative; /*Para permitir que el menú vertical se posicione correctamente*/
+        padding: 15px 20px 20px;
+        text-decoration: none;
+        background: #ddd;
+        display: block;
+        font-size: 20px;
+        text-align: left;
+    }
+    .Lista > a:hover{
+       background: #fff
+    }
+    .Lista:hover .menu-vertical--Pequeño{
+        display: block; /*Mostrar el menú vertical al pasar sobre el elemento del menú horizontal*/
+    }
+    /*Menú vertical*/
+    .menu-vertical--Pequeño{
+        display: none; /*Oculto inicialmente*/
+        list-style: none;
+        position: absolute;
+        top: 0; /*Alineado con el elemento padre*/
+        left: 100%; /*Aparece a la derecha del menú horizontal*/
+        background: #fff;
+        width: 250px; /*Ancho del menú vertical*/
+        z-index: 999;
+        padding: 0;
+    }
+    .Lista > a{
+        color: #46e;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        text-align: left;
+    }
+}

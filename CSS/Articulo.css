@@ -1,0 +1,46 @@
+.Tecnico-e-Ingeniero > img{
+	float: left;
+	width: 100px;
+	padding-right: 5px;
+}
+.Tecnico-e-Ingeniero > p{
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+.Article{
+	display: inline-block;
+	margin: 50px 420px 70px;
+	width: 450px;
+	height: 200px;
+	overflow: auto;
+	object-fit: contain;
+	border: 5px outset #ddd;
+}
+/*Resonposive design*/
+@media only screen and (max-width: 1024px){
+	.Article{
+		margin-left: 350px;
+	}
+}
+@media only screen and (max-width: 853px){
+	.Article{
+		margin-left: 200px;
+	}
+}
+@media only screen and (max-width: 430px){
+	.Article{
+		margin: 0 20px;
+		width: 350px;
+	}
+}
+@media only screen and (max-width: 412px){
+	.Article{
+		margin: 0 20px;
+		width: 350px;
+	}
+}
+@media only screen and (max-width: 374px){
+	.Article{
+		margin: 20px 0 20px;
+	}
+}

@@ -1,0 +1,45 @@
+footer{
+	background: #48e;
+	width: 1400px;
+	font-size: 50px;
+}
+footer a.Facebook{
+	color: rgb(0, 0, 100);
+	padding-left: 50px;
+	margin-left: 400px;
+}
+.YouTube{
+	color: rgb(255, 0, 0);
+	padding-left: 50px;
+}
+.WhatsApp{
+	color: rgb(0, 255, 0);
+	padding-left: 50px;
+}
+.Linkedin{
+	color: rgb(0, 0, 100);
+	padding-left: 50px;
+}
+/*Resonposive design*/
+@media only screen and (max-width: 1024px){
+	footer{
+		width: 1227px;
+	}
+}
+@media only screen and (max-width: 540px){
+	footer{
+		width: 1075px;
+	}
+}
+	.Facebook{
+		margin-left: 250px;
+	}
+@media only screen and (max-width: 430px){
+	footer{
+		width: 570px;
+		font-size: 20px;
+	}
+	.Facebook{
+		margin-left: 50px;
+	}
+}
