@@ -12,7 +12,6 @@ body{
     background: #000;
     font-size: 25px;
     position: fixed;
-    border: 5px inset #ddd;
 }
 .menu-horizontal{
     list-style: none;
