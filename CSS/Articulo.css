@@ -32,6 +32,11 @@
 		width: 500px;
 	}
 }
+@media only screen and (max-width: 696px){
+	.Article{
+		width: 450px;
+	}
+}
 @media only screen and (max-width: 430px){
 	.Article{
 		margin: 0 20px;
