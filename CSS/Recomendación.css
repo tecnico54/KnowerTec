@@ -82,6 +82,14 @@
         margin: 75px 100px;
     }
 }
+@media only screen and (max-width: 758px){
+	.Tamaño-de-Tarjetas-Madre{
+		width: 505px;
+	}
+	.Shopping-Pc{
+		width: 490px;
+	}
+}
 @media only screen and (max-width: 514px){
 	.Shopping-Pc{
 		margin: 20px 200px 500px;
