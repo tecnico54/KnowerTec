@@ -82,20 +82,20 @@
         margin: 75px 100px;
     }
 }
-@media only screen and (max-width: 758px){
+@media only screen and (max-width: 800px){
 	.Tamaño-de-Tarjetas-Madre{
-		width: 505px;
+		width: 400px;
 	}
 	.Shopping-Pc{
-		width: 490px;
+		width: 450px;
 	}
 }
 @media only screen and (max-width: 696px){
 	.Tamaño-de-Tarjetas-Madre{
-		width: 400px;
+		width: 450px;
 	}
 	.Shopping-Pc{
-		width: 400px;
+		width: 490px;
 	}
 }
 @media only screen and (max-width: 514px){
