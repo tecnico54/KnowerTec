@@ -84,10 +84,12 @@
 }
 @media only screen and (max-width: 800px){
 	.Tamaño-de-Tarjetas-Madre{
-		width: 400px;
+		width: 555px;
+		margin-left: 0;
 	}
 	.Shopping-Pc{
-		width: 450px;
+		width: 555px;
+		margin-left: 0;
 	}
 }
 @media only screen and (max-width: 696px){
