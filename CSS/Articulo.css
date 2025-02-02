@@ -27,14 +27,14 @@
 		margin-left: 200px;
 	}
 }
-@media only screen and (max-width: 758px){
+@media only screen and (max-width: 800px){
 	.Article{
-		width: 500px;
+		width: 400px;
 	}
 }
 @media only screen and (max-width: 696px){
 	.Article{
-		width: 400px;
+		width: 450px;
 	}
 }
 @media only screen and (max-width: 430px){
