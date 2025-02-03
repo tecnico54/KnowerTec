@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../Imagenes/Pc-Knower.png">
+        <link rel="stylesheet" type="text/css" href="../CSS/Opiniones.css">
+        <title>Comentarios</title>
+    </head>
+    <body>
+        <h2 class="Titulo">Deja tu comentario</h2>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <textarea id="message" placeholder="Escribe tu comentario..." required></textarea>
+            <button class="Botón" onclick="submitComment()">Enviar</button>
+
+            <h2 class="Comentarios">Comentarios</h2>
+            <div id="commentsContainer"></div>
+        <script src="../JavaScript/Opiniones.js"></script>
+    </body>
+</html>
