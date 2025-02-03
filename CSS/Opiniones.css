@@ -37,7 +37,7 @@ input, textarea{
     border: 1px solid #ddd;
 }
 div{
-     border: 5px inset #bbb;
+     border: 5px dasher #bbb;
 }
 /*Resposive design*/
 @media only screen and (max-width: 800px){
