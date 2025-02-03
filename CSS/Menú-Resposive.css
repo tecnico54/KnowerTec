@@ -12,16 +12,17 @@
   border: 5px inset #ddd;
 }
 .Menú-horizontal {
-	display: flex;
+  display: flex;
   width: 900px;
 }
 .Imagen {
 	display: flex;
-  max-width: 150px;
+ width: 100px;
+  height: 90px;
 }
 .Lista__Menú-horizontal--Cursos{
 	display: flex;
-  padding: 20px 50px;
+  padding: 20px 25px;
 }
 .Lista__Menú-horizontal--Cursos > a{
 	color: #48e;
