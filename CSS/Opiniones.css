@@ -1,0 +1,37 @@
+/*Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+/*Titulo*/
+.Titulo{
+    font-size: 50px;
+    text-align: center;
+}
+/*Estilos del formulario de comentarios*/
+#message{
+    margin: 25px 350px;
+}
+.Botón{
+    background: #28e;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 15px;
+    margin-left: 555px;
+    box-shadow: 5px 5px 2px 0 #000;
+    cursor: pointer;
+}
+.Botón:hover{
+   box-shadow: 15px 15px 5px #000;
+   font-size: 20px;
+}
+.Comentarios{
+    margin-left: 20px;
+}
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 5px 20px;
+    border: 1px solid #ddd;
