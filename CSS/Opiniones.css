@@ -36,7 +36,7 @@ input, textarea{
     margin: 5px 20px;
     border: 1px solid #ddd;
 }
-#commentsContainer{
+div{
      border: 5px inset #bbb;
 }
 /*Resposive design*/
