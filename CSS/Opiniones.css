@@ -37,7 +37,7 @@ input, textarea{
     border: 1px solid #ddd;
 }
 #commentsContainer{
-     border: 5px dasher #bbb;
+     border: 5px inset #bbb;
 }
 /*Resposive design*/
 @media only screen and (max-width: 800px){
