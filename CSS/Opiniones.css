@@ -1,8 +1,8 @@
 /*Estilos generales*/
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 }
 /*Titulo*/
 .Titulo{
@@ -29,9 +29,25 @@ body {
 .Comentarios{
     margin-left: 20px;
 }
-input, textarea {
+input, textarea{
     width: 100%;
     max-width: 500px;
     padding: 10px;
     margin: 5px 20px;
     border: 1px solid #ddd;
+}
+/*Resposive design*/
+@media only screen and (max-width: 800px){
+    #message{
+    margin: 5px 10px;
+    }
+    .Botón{
+    background: #28e;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 15px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 2px 0 #000;
+    cursor: pointer;
+    }
+}
