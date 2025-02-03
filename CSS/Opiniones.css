@@ -38,6 +38,7 @@ input, textarea{
 }
 div{
      border: 5px dasher #bbb;
+     opacity: 0.2
 }
 /*Resposive design*/
 @media only screen and (max-width: 800px){
