@@ -8,7 +8,7 @@
         commentBox.classList.add('comment-box');
         commentBox.innerHTML = `
         <h3>Nombre: ${comment.name}<br>Email: ${comment.email}</h3>
-        <p><b>${comment.message}</b></p>
+        <p><b>${comment.feedback}</b></p>
         <button style="cursor: pointer; background: #26e; box-shadow: 5px 5px 2px 0 #000;" onclick="editComment(${index})">Editar</button>
         <button style="cursor: pointer; margin-left: 10px; background: rgb(255, 0, 0); box-shadow: 5px 5px 2px 0 #000;" onclick="deleteComment(${index})">Eliminar</button>
         `;
@@ -19,15 +19,15 @@
       function submitComment() {
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-            if (name && email && message) {
-                const newComment = { name, email, message };
+        const feedback = document.getElementById('feedback').value.trim();
+            if (name && feedback) {
+                const newComment = { name, email, feedback };
                 let comments = JSON.parse(localStorage.getItem("comments")) || [];
                 comments.unshift(newComment); //Agrega el nuevo comentario al inicio
                 localStorage.setItem("comments", JSON.stringify(comments)); //Guardar en localStorage
                 document.getElementById('name').value = "";
                 document.getElementById('email').value = "";
-                document.getElementById('message').value = "";
+                document.getElementById('feedback').value = "";
                 loadComments(); //Recargar los comentarios
             } else {
                 alert('Por favor, llena todos los campos.');
@@ -40,7 +40,7 @@
             //Rellenar los campos del formulario con el comentario a editar
             document.getElementById('name').value = comment.name;
             document.getElementById('email').value = comment.email;
-            document.getElementById('message').value = comment.message;
+            document.getElementById('feedback').value = comment.feedback;
             //Eliminar el comentario original antes de editarlo
             comments.splice(index, 1);
             localStorage.setItem("comments", JSON.stringify(comments));
